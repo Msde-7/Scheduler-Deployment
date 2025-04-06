@@ -93,7 +93,7 @@ export default function ChatbotInterface() {
           />
           <div>
             <h2 className="text-base font-semibold text-gray-800">
-              IU Scheduling Assistant
+              EduAdvisorAI
             </h2>
             <p className="text-xs text-gray-500">Online</p>
           </div>
