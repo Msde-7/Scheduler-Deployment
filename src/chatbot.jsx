@@ -48,7 +48,7 @@ export default function ChatbotInterface() {
             headers: {
               "Content-Type": "application/json"
             },
-            //credentials: "include",  // ✅ ADD THIS LINE
+            credentials: "include",  // ✅ ADD THIS LINE
             body: JSON.stringify({ text, state })
           });
   
