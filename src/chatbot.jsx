@@ -15,10 +15,6 @@ export default function ChatbotInterface() {
   const [inputValue, setInputValue] = useState("");
   const [isTyping, setIsTyping] = useState(false);
 
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!inputValue.trim()) return;
