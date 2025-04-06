@@ -8,7 +8,6 @@ import { marked } from "marked";
 const ai = new GoogleGenerativeAI("AIzaSyDaFG2DfySbZothZJf-q9Sjapgc67WRW1g");
 
 export default function ChatbotInterface() {
-  const bottomRef = useRef(null);
   const [chatBranchState, setChatBranchState] = useState('Initial State');
   const [messages, setMessages] = useState([
     { id: 1, text: "Hi there! I'm your Scheduling Assistant 🤖\n I’m here to help remove the stress of forging your academic journey! Whether you're exploring majors and minors that match your interests, or wanting to schedule your semester based off of interests, as an AI assistant, I've got you covered. Let’s make planning your future a breeze! Just tell me whether you want to explore minors, explore majors, or schedule for next semester! 🎓📅", sender: "bot" },
@@ -140,8 +139,6 @@ export default function ChatbotInterface() {
               </div>
             </div>
           )}
-          <div ref={bottomRef}></div>
-
         </div>
       </div>
 
