@@ -113,7 +113,7 @@ export default function ChatbotInterface() {
       ? "bg-[#990000] text-white rounded-br-none"
       : "bg-gray-200 text-gray-800 rounded-bl-none"
   }`}
-  dangerouslySetInnerHTML={{ __html: marked.parse(message.text.replace(/\n/g, "<br>")) }}
+  dangerouslySetInnerHTML={{ __html: marked.parse(message.text) }}
 ></div>
             </div>
           ))}
